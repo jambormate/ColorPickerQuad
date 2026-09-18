@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="color-text" style="color: <%= textColor%>;">Szöveg amelynek a színe változhat</p>
+    <form>
+        <label for="color">Válassz színt:</label>
+        <input type="color" id="color" name="color" value="<%= textColor %>">
+        <input type="submit" value="Váltás">
+    </form>
+</body>
+</html>
