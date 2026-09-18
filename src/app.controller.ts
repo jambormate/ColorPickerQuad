@@ -19,4 +19,10 @@ export class AppController {
       textColor
     }
   }
+  @Get('/quadratic')
+  @Render('quadratic')
+  quadraticMaker(){
+    
+  }
+
 }
