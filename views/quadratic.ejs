@@ -8,12 +8,17 @@
 <body>
     <form>
         <label for="A">Első szám</label>
-        <input type="text" id="A"><br>
+        <input type="text" id="A" name="A"><br>
         <label for="B">Második szám</label>
-        <input type="text" id="B"><br>
+        <input type="text" id="B" name="B"><br>
         <label for="C">Harmadik szám</label>
-        <input type="text" id="C"><br>
+        <input type="text" id="C" name="C"><br>
         <input type="submit" value="Beküldés">
     </form>
+    <% if (x1 != '') { %>
+        <h2>Megoldások:</h2>
+        <p>x₁ = <%= x1 %></p>
+        <p>x₂ = <%= x2 %></p>
+    <% } %>
 </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="price">Nettó ár:</label>
+        <input type="text" id="price" name="price"><br>
+        <label for="category">Kategória:</label>
+        <select id="category" name="category">
+            <option value="food">Élelmiszer (0%)</option>
+            <option value="book">Könyv (5%)</option>
+            <option value="electronics">Elektronikai termék (27%)</option>
+        </select>
+        <br>
+        <input type="submit" value="Számolás">
+    </form>
+
+    <% if (vegOsszeg != 0) { %>
+
+        <h2>Bruttó ár:</h2>
+
+        <p><%= vegOsszeg %> Ft</p>
+
+    <% } %>
+
+</body>
+</html>

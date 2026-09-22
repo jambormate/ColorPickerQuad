@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <%= intro %>
+    </p>
+    <form>
+        <label for="lang">Nyelv:</label>
+        <select id="lang" name="lang">
+            <option value="hu" <%= lang == 'hu' ? 'selected' : '' %>>Magyar</option>
+            <option value="en" <%= lang == 'en' ? 'selected' : '' %>>English</option>
+        </select>
+        <input type="submit" value="Váltás">
+    </form>
+
+</body>
+</html>
